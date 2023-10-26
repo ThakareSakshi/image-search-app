@@ -63,6 +63,7 @@ function displayimages(images){
     // show_more.setAttribute("class","show_more");
     // show_more.innerText="show more"
     // show_more_btn_container.innerHTML=``;
+    show_more.style.display="block"
     
    
 }

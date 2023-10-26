@@ -1,33 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>search image</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <section class="header-section">
-        <h2>Find Images Which suites you Most</h2>
-        <div>
-            <input type="search" id="search_keyword" placeholder="search images....">
-            <button id="search_btn">search</button>
-        </div>
+      <h2>Find Images Which suites you Most</h2>
+      <div>
+        <input
+          type="search"
+          id="search_keyword"
+          placeholder="search images...."
+        />
+        <button id="search_btn">search</button>
+      </div>
     </section>
     <div class="loader_container">
-        <div class="loading"></div>
+      <div class="loading"></div>
     </div>
     <section class="image_container">
-     <!-- <div class="container">
-    
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w1MjAzMDJ8MHwxfHNlYXJjaHwxMXx8c3Vuc2V0fGVufDB8fHx8MTY5ODMyOTgyOXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+          alt=""
+        />
+        <div class="des">brown boat near dock</div>
+        <div class="likes">
+          <i class="fa fa-heart" aria-hidden="true" style="color: red"></i
+          ><span class="like-count">2480</span>
+        </div>
+      </div>
 
-     </div> -->
-     <!-- <div><i class="fa fa-heart" aria-hidden="true" style="color:red"></i></div> -->
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1444492417251-9c84a5fa18e0?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w1MjAzMDJ8MHwxfHNlYXJjaHw0fHxhdXR1bW58ZW58MHx8fHwxNjk4MzI5OTA4fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+          alt=""
+        />
+        <div class="des">brown wooden bench beside tree</div>
+        <div class="likes">
+          <i class="fa fa-heart" aria-hidden="true" style="color: red"></i
+          ><span class="like-count">4250</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1501854140801-50d01698950b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w1MjAzMDJ8MHwxfHNlYXJjaHwzfHxuYXR1cmV8ZW58MHx8fHwxNjk4MzI5NjY2fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+          alt=""
+        />
+        <div class="des">bird's eye view photograph of green mountains</div>
+        <div class="likes">
+          <i class="fa fa-heart" aria-hidden="true" style="color: red"></i
+          ><span class="like-count">6681</span>
+        </div>
+      </div>
     </section>
     <div class="show_more_btn_container">
-        <button class="show_more">show more</button>
+      <button class="show_more">show more</button>
     </div>
-  <script src="./script.js"></script>  
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>

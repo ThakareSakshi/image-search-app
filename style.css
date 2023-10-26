@@ -78,6 +78,7 @@ section div{
     background-color: rgb(234, 86, 101);
     color:white;
     border:none;
+    display: none;
     
 }
 .container{
