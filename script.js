@@ -25,7 +25,7 @@ function displayimages(images){
         container.setAttribute("class","container")
         container.innerHTML=`<img src="${ele.urls.regular}" alt="">
         <div class="des">${ele.alt_description} </div>
-        <div class="likes"><i class="fa fa-heart" aria-hidden="true" style="color:red"></i>${ele.likes}</div>`
+        <div class="likes"><i class="fa fa-heart" aria-hidden="true" style="color:red"></i><span class="like-count">${ele.likes}</span></div>`
         newContainer.appendChild(container);
         
     });

@@ -24,6 +24,8 @@ section div{
     border-color: grey;
     width: 60%; 
      outline: none;
+     border:none;
+     box-shadow: 0px 0px 2px grey;
 }
 #search_btn{
     padding:15px 25px;
@@ -31,12 +33,12 @@ section div{
    border:none;
     color:white;
   
-    background:radial-gradient(rgb(59, 106, 236),rgb(208, 0, 255)) ;
+    background:radial-gradient(rgb(68, 236, 59),rgb(173, 234, 123)) ;
 
 }
 #search_btn:hover{
-    border:2px solid rgb(59, 106, 236);
-    color:rgb(59, 106, 236);
+    border:2px solid rgb(98, 210, 57);
+    color:rgb(118, 236, 59);
     background: transparent;
 }
 
@@ -47,7 +49,7 @@ section div{
 
 .show_more{
     padding:12px 20px;
-    background-color: blueviolet;
+    background-color: rgb(96, 234, 86);
     color:white;
     border:none;
     
@@ -68,11 +70,22 @@ img{
 }
 .likes{
     position: absolute;
-    top:10px;
+    /* top:10px; */
     /* left:40%; */
     text-align: center;
     /* right:20px; */
     z-index: -1;
+    height:100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.like-count{
+    color:white;
 }
 .des{
     padding:10px;
@@ -80,6 +93,7 @@ img{
     position: absolute;
     z-index: -1;
     background-color: rgba(240, 248, 255, 0.397);
+    font-size: 20px;
 
 }
 .container:hover .des{
@@ -90,10 +104,46 @@ img{
    
     z-index: 2;
 }
-
+.container:hover img{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
 
 .image_container{
     display: flex;
     flex-wrap: wrap;
     gap:20px;
+}
+.header-section{
+  background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYHuWhS7LExmMGcyMK5nLeDGF8T_7AEJFo9oXV6D1OyybkePJeKUyfNEUMc0VSj_3dMjo&usqp=CAU");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation:changeBack 6s infinite ease-in-out alternate;
+}
+
+@keyframes changeBack {
+    0%{
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsI_W0dVVz23q_IVJLLketiJtVosLBoMUWTr_jSzGoHAAFJyXTC9N6vKbSQkXr5tcoHZA&usqp=CAU");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    50%{
+        background: url("https://iso.500px.com/wp-content/uploads/2016/10/stock-photo-159358357.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+         background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYHuWhS7LExmMGcyMK5nLeDGF8T_7AEJFo9oXV6D1OyybkePJeKUyfNEUMc0VSj_3dMjo&usqp=CAU");
+         background-repeat: no-repeat;
+         background-size: cover;
+    }
+}
+
+
+h2{
+    font-size: 50px;
+    color:white;
+    margin:20px;
 }
