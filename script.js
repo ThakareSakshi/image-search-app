@@ -3,6 +3,7 @@ let search_btn=document.getElementById("search_btn");
 let search_keyword=document.getElementById("search_keyword");
 let show_more_btn_container=document.querySelector(".show_more_btn_container")
 let show_more=document.querySelector(".show_more")
+let loader=document.querySelector(".loader_container")
 let page=1;
 // var id=client_id=kVeJ9_FubrJNuP7sxiJx4M9Dc49gg5vSRaZMhr2VTj0
 
@@ -22,8 +23,12 @@ let fetchApi=async ()=>{
 
 // -----------------search operation--------------------->
 search_btn.addEventListener("click",async()=>{
+    loader.style.display="flex";
    let images= await fetchApi();
-   displayimages(images.results);
+  setTimeout(()=>{
+    loader.style.display="none";
+    displayimages(images.results);
+  },3000)
 
 })
 

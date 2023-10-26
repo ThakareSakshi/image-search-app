@@ -43,6 +43,31 @@ section div{
     font-weight: 600;
 }
 
+.loading{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    /* border: 3px solid white; */
+    border-top: 4px solid red;
+    animation: spin 2s infinite linear;
+
+}
+.loader_container{
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    display: none;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
 .show_more_btn_container{
     display: flex ;
     justify-content: center;
@@ -63,6 +88,7 @@ section div{
     overflow: hidden;
     position: relative;
     min-width: 250px;
+    /* height: 400px; */
 }
 
 
